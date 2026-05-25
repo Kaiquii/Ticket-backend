@@ -28,8 +28,8 @@ API para abertura e acompanhamento de tickets/chamados, criada com FastAPI, Post
 Crie um arquivo `.env` baseado no `.env.example`. O `.env.example` deve ir para o GitHub como modelo, mas o `.env` real deve ficar apenas localmente e nao deve ser versionado.
 
 ```env
-DATABASE_URL=postgresql+psycopg://postgres:4343@localhost:5432/ticket_db
-JWT_SECRET_KEY=change-this-secret
+DATABASE_URL=postgresql+psycopg://SEU_USUARIO:SUA_SENHA@localhost:5432/NOME_DO_BANCO
+JWT_SECRET_KEY=SUA_CHAVE_SECRETA
 JWT_ALGORITHM=HS256
 JWT_EXPIRATION_MINUTES=4320
 ```
