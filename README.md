@@ -64,12 +64,6 @@ app/main.py
 
 Dentro dele existe a variavel `app`, que e a instancia do FastAPI carregada pelo Uvicorn. Por isso usamos `app.main:app`: o primeiro `app` e a pasta do projeto, `main` e o arquivo `main.py`, e o ultimo `app` e a variavel FastAPI.
 
-A documentacao interativa ficara disponivel em:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
 ## Como executar com Docker
 
 Suba a API e o PostgreSQL:
