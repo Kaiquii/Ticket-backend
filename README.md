@@ -78,6 +78,21 @@ A API ficara disponivel em:
 http://127.0.0.1:8000
 ```
 
+## 🛠 Solução de Problemas Comuns (Troubleshooting)
+
+### Erro: O termo 'pip' ou 'uvicorn' não é reconhecido
+Isso ocorre quando a pasta de Scripts do Python não está no PATH do Windows.
+* **Solução rápida:** Adicione `py -m` antes do comando.
+  * Exemplo de instalação: `py -m pip install -r requirements.txt`
+  * Exemplo de execução: `py -m uvicorn app.main:app --reload`
+* **Solução definitiva:** Adicione o caminho da pasta de Scripts do Python (ex: `C:\Users\SEU_USUARIO\AppData\Local\Programs\Python\PythonXXX\Scripts`) nas Variáveis de Ambiente do Windows.
+
+### Erro: FATAL: banco de dados "ticket_db" não existe
+A API tenta criar as tabelas automaticamente ao iniciar, mas o banco de dados principal precisa existir.
+* **Solução:** Abra o pgAdmin ou o SQL Shell (psql) do PostgreSQL e execute o comando manualmente antes de rodar a API:
+  ```sql
+  CREATE DATABASE ticket_db;
+
 ## Como rodar os testes
 
 ```bash
