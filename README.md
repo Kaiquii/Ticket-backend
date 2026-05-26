@@ -92,6 +92,7 @@ A API tenta criar as tabelas automaticamente ao iniciar, mas o banco de dados pr
 * **Solução:** Abra o pgAdmin ou o SQL Shell (psql) do PostgreSQL e execute o comando manualmente antes de rodar a API:
   ```sql
   CREATE DATABASE ticket_db;
+  
 
 ## Como rodar os testes
 
