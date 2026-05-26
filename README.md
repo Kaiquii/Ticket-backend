@@ -41,7 +41,7 @@ A senha de usuario deve ter no minimo 3 caracteres.
 Instale as dependencias:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt ou py -m pip install -r requirements.txt
 ```
 
 Crie o banco PostgreSQL:
